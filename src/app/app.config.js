@@ -9,7 +9,7 @@ export default function config(uiGmapGoogleMapApiProvider, $translateProvider) {
       prefix: 'assets/i18n/',
       suffix: '.json'
     });
-    $translateProvider.preferredLanguage('en');
+    $translateProvider.preferredLanguage('cat');
 }
 
 config.$inject = ['uiGmapGoogleMapApiProvider', '$translateProvider'];
