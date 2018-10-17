@@ -18,7 +18,7 @@
     },
     "smart_citizen_brief2": {
         "h2": "smartcitizen.me",
-        "h4": "El sensor envia totes les mesures a la web d'Smart Citizen. És lliure i oberta perquè tothom pugui veure i qüestionar les dades..",
+        "h4": "El sensor envia totes les mesures a la web d'Smart Citizen. És lliure i oberta perquè tothom pugui veure i qüestionar les dades",
         "segueButton": "fem-ho"
     },
     "whats_in_the_box": {
@@ -38,12 +38,12 @@
     },
     "kitbuild2": {
         "h2": "Segon, encén el sensor",
-        "text": "Conecta la bateria a la placa de dades",
+        "text": "Conecta la bateria al Kit",
         "segueButton": "done"
     },
     "kitbuild3": {
         "h2": "Recorda, caldrà que el carreguis de tant en tant",
-        "text": "Conecta l'USB al Kit com ho fas amb el teu mòbil",
+        "text": "La bateria té una autonomia de 12h. Conecta l'USB al Kit com ho fas amb el teu mòbil",
         "segueButton": "great"
     },
     "kitbuild4": {
@@ -74,8 +74,8 @@
     "choose_connection": {
         "h2": "Com vols configurar el teu Kit?",
         "recommended": "Recomenat",
-        "smartphone": "Utilitza el teu smartphone",
-        "lightMethod": "use the light method",
+        "smartphone": "Utilitza el teu mòbil (wifi)",
+        "lightMethod": "Utilitza la pantalla (wifi)",
         "offline": "Mode targeta SD (offline)",
         "segueButtonError": "Selecciona una opció",
         "continuaButton": "continua",
@@ -85,14 +85,14 @@
     },
     "wifi_enter": {
         "h2": "A quina xarxa Wi-Fi vols connectar el teu Kit a internet?",
-        "h4": "Hauràs d'escriure-la manualment..",
+        "h4": "Hauràs d'escriure-la manualment.",
         "input1": "Nom de la xarxa Wi-Fi",
         "input1_error": "Has d'escriure el nom d'una xarxa Wi-Fi",
         "input2": "Contrasenya",
         "input2_error": "",
         "segueButtonError": "comrova els camps",
         "segueButton": "apunt!",
-        "contextButton": "prova-ho d'una altre manera..",
+        "contextButton": "prova-ho d'una altre manera.",
         "contextButton2": "demana ajuda",
         "continueButton": "continua"
     },
@@ -105,7 +105,7 @@
         "continueButton": "continua"
     },
     "wifi_check": {
-        "h2": "Oops, alguna cosa ha fallat..",
+        "h2": "Oops, alguna cosa ha fallat.",
         "h4": "Sembla que hi ha un problema. Fixa't si la llum del Kit segueix vermella, siusplau torna a escriure el nom i la contraseña del teu Wi-Fi",
         "input1": "",
         "input1_error": "",
@@ -138,13 +138,13 @@
         "h2": "Hauries de veure aquesta pantalla al teu mòbil o tablet",
         "h3_1": "Si no apareix obre el nagegador del teu móvil i visita",
         "em_1": " www.mysck.me",
-        "h4": "Si encara no funciona comproba que estàs connectat al Wi-Fi",
+        "h4": "Si encara no funciona comproba que estàs connectat al Wi-Fi, obre el teu navegador i escriu www.sck.me",
         "promptedText": "mysck.me",
         "segueButton": "connectat"
     },
     "ap_final": {
         "h2": "Introdueix el codi de que apareix a sota i després selecciona el teu Wi-Fi i escriu la contrasenya",
-        "h4": "Si el Wi-Fi y la contrasenya son correctes, seràs redirigit en breu",
+        "h4": "Si el Wi-Fi i la contrasenya són correctes, seràs redirigit en breu",
         "promptedText": "EL CÓDI ÉS AQUÍ",
         "segueButton": "llest"
     },
@@ -165,7 +165,7 @@
       "h3_2": " del teu sensor, ubicat",
       "em_2": " a la part inferior",
       "h3_3": " del teu Kit",
-      "h4": "Si no el veus, assegura't que el led és vermell.  En cas de no saber quin selecciona fixa't en les quatre lletres impreses al teu Kit",
+      "h4": "Si no el veus, assegura't que el led és vermell. En cas de no saber quin selecciona fixa't en les quatre lletres impreses al teu Kit",
       "promptedText": "SmartCitizen[...]",
       "segueButton": "conectat"
     },
@@ -192,13 +192,13 @@
     },
     "sensorName_prep": {
         "h1": "És hora de donar-li un nom al teu sensor!",
-        "h4": "Això ens ajudarà a saber d'on venen les dades...",
+        "h4": "Això ens ajudarà a saber d'on venen les dades..",
         "segueButtonError": "escull un nom",
         "segueButton": "continua"
     },
     "sensorName": {
         "h2": "Quin nom li vols donar al teu Kit?",
-        "h4": "Li pots dir com vulguis. Així és com apareixerà al mapa d'Smart Citizen.",
+        "h4": "Li pots dir com vulguis. Així és com apareixerà al mapa d'Smart Citizen",
         "input1": "Escriu el nom del Kit",
         "input1_error": "El Kit necessita un nom",
         "contextButton": "escull un nom aleatori",
@@ -207,14 +207,14 @@
     },
     "location_prep": {
         "h2": "On instal·laràs el Kit?",
-        "h4": "Pressionant 'permet' a la finestra de diàleg podrem determinar la ubicació actual del Kit. Després pots ajustar-la manualment a qualsevol lloc on vulguis situar el Kit.",
+        "h4": "Pressionant 'permet' a la finestra de diàleg podrem determinar la ubicació actual del Kit. Després pots ajustar-la manualment a qualsevol lloc on vulguis situar el Kit",
         "segueButton": "fet",
         "continueButton": "fet!",
         "waitButton": "espera"
     },
     "location_map": {
-        "h2": "Si vols ajustar la ubicació ho pot fer aquí.",
-        "h4": "Recorda que el teu dispositiu necessita tenir accés Wi-Fi. Si no és així les dades no es guardaràn a la plataforma.",
+        "h2": "Si vols ajustar la ubicació ho pot fer aquí",
+        "h4": "Recorda que el teu dispositiu necessita tenir accés Wi-Fi. Si no és així les dades no es guardaràn a la plataforma",
         "input1": "Introdueix la teva adreça",
         "input1_error": "",
         "segueButton": "fet",
@@ -222,7 +222,7 @@
     },
     "location_tags": {
         "h2": "Selecciona les paraules que millor descriuen el lloc on has instal·lat el Kit",
-        "h4": "Això ens ajudarà a saber el que estàs medint",
+        "h4": "Això ens ajudarà a saber el què estàs medint",
         "segueButton": "tot apunt",
         "continueButton": "tot apunt"
     },
@@ -233,7 +233,7 @@
     },
     "account1": {
         "h2": "Podem guardar el Kit amb la teva adreça de correu electrònic",
-        "h4": "Si ja tens un compte a Smart Citizen l'afegirem allà. Si no, we'll quickly make a new one",
+        "h4": "Si ja tens un compte a Smart Citizen l'afegirem allà. Si no, en crearem un per tu",
         "segueButton": "continua",
         "input1": "Afegeix el teu correu a continuació",
         "input1_error": "Cal que afegeixis una adreça",
@@ -252,7 +252,7 @@
     },
     "account2": {
         "h2": "Guai, sembla que ets nou a Smart Citizen?",
-        "h4": "Afegeix un nom d'usuari al teu perfil, d'aquesta manera els altres usuaris sabràn de qui és el Kit.",
+        "h4": "Afegeix un nom d'usuari al teu perfil, d'aquesta manera els altres usuaris sabràn de qui és el Kit",
         "input1": "Afegeix un nom d'usuari",
         "input1_error": "El nom d'usuari és obligatori",
         "input1_error2": "",
@@ -263,7 +263,7 @@
     "account3": {
         "h2": "Ara, afegeix una contrasenya per protegir el teu usuari",
         "h4a": "La contrasenya ha de tenir com a mínim 8 caràcters",
-        "h4b": "I una vegada més per assegurar-nos que no hi han errors.",
+        "h4b": "I una vegada més per assegurar-nos que no hi han errors",
         "input1": "Password",
         "input1_error": "La contrasenya ha de tenir com a mínim 5 caràcters",
         "input1_error2": "Has d'introduir una contrasenya",
@@ -274,7 +274,7 @@
     "final": {
         "h1": "És viu!",
         "h2": "El Kit ha estat configurat amb èxit i ja està publicant a Smart Citizen, la comunitat global de sensors",
-        "h4": "Visita SmartCitizen.me  per veure el teu Kit en acció publicant dades. No t'oblidis de llegir el el manual amb les instrucciones d'instal·lació amb consells sobre com col·locar-lo a l'exterior.",
+        "h4": "Visita SmartCitizen.me  per veure el teu Kit en acció publicant dades. No t'oblidis de llegir el el manual amb les instrucciones d'instal·lació amb consells sobre com col·locar-lo a l'exterior",
         "h4b": "Recorda que si has configurat el Kit en mode targeta SD caldrà que manualment pugis les dades a la plataforma utilitzant l'opció 'Upload CSV'",
         "segueButton": "visita smartcitizen.me"
     },
