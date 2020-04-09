@@ -26,7 +26,7 @@ export function accesspointController($scope, scopePayload, AnimationService, $r
 
 accesspointController.$inject = ['$scope', 'scopePayload', 'AnimationService', '$rootScope', 'platform', '$state', '$interval', '$timeout', '$stateParams'];
 
-export function accesspointController_base($scope, $stateParams, scopePayload, AnimationService, $rootScope, $sce) {
+export function accesspointController_base($scope, $stateParams, scopePayload, AnimationService, $rootScope, $sce, platform, $timeout) {
     $rootScope.lang = $stateParams.lang;
     $scope.$parent.payload = scopePayload;
     AnimationService.animate(scopePayload.template);
@@ -37,6 +37,37 @@ export function accesspointController_base($scope, $stateParams, scopePayload, A
     } else if ($scope.$parent.payload.url == "accesspoint_2") {
         $scope.bindable = $sce.trustAsHtml($scope.$parent.payload.h3_1 + "<em class=blue>" + $scope.$parent.payload.em_1 + "</em>");
     }
+
+    checkHandshake();
+
+    $scope.$parent.watchDog = $timeout(function() {
+        prepSegue();
+        $rootScope.$broadcast('forceSegue', { target: 'wizard.ap_issues', params: {lang: $stateParams.lang}});
+    }, $scope.$parent.apModeWatchDog);
+
+    function recurrentHandshake(){
+        $scope.$parent.watchHandshake = $timeout(function() {
+            checkHandshake();
+        }, 5000);
+    }
+
+    function checkHandshake(){
+        $timeout.cancel($scope.$parent.watchDog);
+        $timeout.cancel($scope.$parent.watchHandshake);
+        platform.getDevice().then(function(device){
+            if(device.device_handshake == true){
+                prepSegue();
+            } else {
+                recurrentHandshake();
+            }
+        })
+    }
+
+    function prepSegue() {
+        $timeout.cancel($scope.$parent.watchDog);
+        $timeout.cancel($scope.$parent.watchHandshake);
+        $rootScope.$broadcast('forceSegue', { target: 'wizard.confirm_handshake'});
+    }
 }
 
-accesspointController_base.$inject = ['$scope', '$stateParams', 'scopePayload', 'AnimationService', '$rootScope', '$sce'];
+accesspointController_base.$inject = ['$scope', '$stateParams', 'scopePayload', 'AnimationService', '$rootScope', '$sce', 'platform', '$timeout'];
